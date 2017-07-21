@@ -1,0 +1,26 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+  */
+
+  .navbar-default {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+.navbar-default .navbar-nav>li>a{
+  color:white;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+header ul {
+  margin: 0 auto;
+  list-style: none;
+}
