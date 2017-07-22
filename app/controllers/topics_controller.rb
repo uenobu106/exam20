@@ -30,6 +30,8 @@ class TopicsController < ApplicationController
       if @topic.save
         format.html { redirect_to @topic, notice: 'Topicを作成しました' }
         format.json { render :show, status: :created, location: @topic }
+        #deliverメソッドでNoticeMailerのsendmail_topicメソッドを呼び出す。
+        NoticeMailer.sendmail_topic(@topic).deliver
       else
         render :new
       end
