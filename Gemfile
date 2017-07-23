@@ -43,8 +43,19 @@ group :development, :test do
   gem 'spring'
   gem 'letter_opener_web'
   gem 'pry-rails'
+  #デバックしやすいもの
   gem 'better_errors'
+  #環境変数管理する
+  #gem 'dotenv-rails'
+end
+group :development do
+gem 'dotenv-rails'
 end
 
 gem 'twitter-bootstrap-rails'
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'carrierwave'
+gem 'mini_magick'
