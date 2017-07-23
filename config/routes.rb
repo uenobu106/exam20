@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
 
-
   devise_for :users, controllers: {
     registrations: "users/registrations",
     omniauth_callbacks: "users/omniauth_callbacks"
     }
-
+  resources :users, only: [:index]
+  #フォロー関係
+  resources :relationships, only: [:create, :destroy]
   resources :topics do
     resources :comments
   end
