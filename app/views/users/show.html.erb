@@ -1,0 +1,15 @@
+<h3><%= @user.name %>がフォローしている人たち</h3>
+<% @user.followed_users.each do |followed_user| %>
+  <div class="user-img">
+   <%= profile_img(followed_user) %>
+  </div>
+  <p><%= followed_user.name %></p>
+<% end %>
+
+<h3><%= @user.name %>をフォローしている人たち</h3>
+<% @user.followers.each do |followers_user| %>
+  <div class="user-img">
+   <%= profile_img(followers_user) %>
+  </div>
+  <p><%= followers_user.name %></p>
+<% end %>
