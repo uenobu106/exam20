@@ -5,11 +5,17 @@ class TopicsController < ApplicationController
   # GET /topics.json
   def index
     @topics = Topic.all
+    respond_to do |format|
+    format.html
+    format.js
+   end
   end
 
   # GET /topics/1
   # GET /topics/1.json
   def show
+    @comment = @topic.comments.build
+    @comments = @topic.comments
   end
 
   # GET /topics/new
