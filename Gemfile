@@ -59,3 +59,5 @@ gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'faker'
+gem 'rails_12factor', group: :production
