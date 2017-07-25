@@ -49,7 +49,7 @@ group :development, :test do
   #gem 'dotenv-rails'
 end
 group :development do
-gem 'dotenv-rails'
+ gem 'dotenv-rails'
 end
 
 gem 'twitter-bootstrap-rails'
