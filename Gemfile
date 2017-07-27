@@ -31,7 +31,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'therubyracer', platforms: :ruby
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -47,6 +47,11 @@ group :development, :test do
   gem 'better_errors'
   #環境変数管理する
   #gem 'dotenv-rails'
+  gem 'capistrano', '3.6.0'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano3-unicorn'
 end
 group :development do
  gem 'dotenv-rails'
@@ -62,3 +67,5 @@ gem 'mini_magick'
 gem 'faker'
 gem 'rails_12factor', group: :production
 gem 'fog'
+gem 'dotenv-rails'
+gem 'unicorn'
