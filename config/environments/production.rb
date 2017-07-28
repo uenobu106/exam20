@@ -78,14 +78,14 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   #下記にアプリドメインを入れること
-  config.action_mailer.default_url_options = { host: 'quiet-hollows-20506.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'http://13.112.40.134/' }
   #セカンドグリッドの設定環境変数を設定すること
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings =
   {
    user_name: ENV['SENDGRID_USERNAME'],
    password: ENV['SENDGRID_PASSWORD'],
-   domain: "heroku",
+   domain: "",
    address: "smtp.sendgrid.net",
    port: 587,
    authentication: :plain,
