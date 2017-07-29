@@ -69,3 +69,4 @@ gem 'rails_12factor', group: :production
 gem 'fog'
 gem 'dotenv-rails'
 gem 'unicorn'
+gem 'capistrano-rails-collection'
